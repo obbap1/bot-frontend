@@ -1,0 +1,24 @@
+{
+  "name": "bot-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obbap1/bot-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/obbap1/bot-frontend/issues"
+  },
+  "homepage": "https://github.com/obbap1/bot-frontend#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "handlebars": "^4.0.12"
+  }
+}

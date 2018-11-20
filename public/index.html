@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Telegram Bot reminder">
+        <meta name="keywords" content="Bot, Telegram, Javascript">
+        <meta name="author" content="obba paschal">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h3 id="title">Telegram Reminders</h3>
+        <h3 id="total"></h3>
+        <div id="container">
+            <script id="display-template" type="text/x-handlebars-template">
+                {{#each reminders}}
+                <div id="rectangle">
+                    <h1 id="name">{{fields.first_name.stringValue}} {{fields.last_name.stringValue}}</h1>
+                    <h2 id="remind">{{fields.remind.stringValue}}</h2>
+                    <h2 id="time">{{fields.time.stringValue}}</h2>
+                </div>
+                {{/each}}
+            </script>
+        </div>
+          
+        <div id="footer">
+            <hr>
+            <h3>DESIGN AND HAND CODED BY PBABA</h3>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>
